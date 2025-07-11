@@ -1,108 +1,96 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-.red {
-  color: #f00;
-  font-weight: 700;
-}
-.pressStart {
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.skillset {
-  display: block;
-  width: 100%;
-  height: 350px;
-}
-.skill {
-  float: left;
-  min-width: 200px;
-  height: 200px;
-  background: #444;
-  border-radius: 16px;
-  border: 3px solid #222;
-  box-shadow: 3px 3px 7px #111;
-  text-align: center;
-  padding: 10px;
-  margin: 0 21px;
-  cursor: pointer;
-}
-.title {
-  padding: 10px 0;
-  margin: 25px 0;
-  background: #333;
-  border-radius: 8px;
-  border: 2px solid #111;
-  font-size: 1.6em;
-}
-.icon {
-  width: 64px;
-  margin: 10px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid #000;
-}
-body {
-  font-size: 1.5em;
-  background: #444;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-header {
-  width: 100%;
-  height: 600px;
-  background: url('../assets/images/headerBkg.jpg');
-  background-position-y: -575px;
-  text-align: center;
-  padding-top: 200px;
-  font-size: 2em;
-  text-shadow: 3px 3px 7px #777;
-  border-bottom: 1px solid #000;
-}
-#about {
-  width: 100%;
-  height: 900px;
-}
-  #aboutLeft {
-    width: 50%;
-    height: 900px;
-    padding: 25px 50px;
-    padding-top: 50px;
-    float: left;
-    background: linear-gradient(#777, #555);
-    font-size: 1.3em;
-    border-right: 1px solid #000;
-  }
-    #aboutLeft > p {
-      margin: 20px 0;
+      margin: 0; padding: 0; box-sizing: border-box;
     }
-    #bioPic {
-      width: 350px;
-      border-radius: 50%;
-      border: 4px solid #222;
-      box-shadow: 3px 3px 7px #111;
-      float: left;
-      margin-right: 67px;
-      margin-bottom: 50px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #2f2b2b;
+      color: #fff;
+      line-height: 1.6;
     }
-  #aboutRight {
-    width: 50%;
-    height: 900px;
-    padding: 25px 50px;
-    float: left;
-    background: linear-gradient(#ccc, #999);
-    text-align: center;
-  }
-footer {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  padding-top: 18px;
-  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: .9em;
-  border-top: 1px solid #000;
-}
+    a {
+      text-decoration: none;
+      color: #00d9ff;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff5e57;
+    }
+    header {
+      background: #121212;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    header h1 {
+      color: #00d9ff;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+    nav a {
+      margin-left: 1.5em;
+      font-weight: 500;
+    }
+    section {
+      padding: 4rem 2em;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .about {
+      text-align: center;
+      padding-top: 6gem;
+    }
+    .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      background: linear-gradient(90deg, #00d9ff, #ff5e57);
+      
+      
+    }
+    .about p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    .section-title {
+      font-size: 2em;
+      color: #00d9ff;
+      margin-bottom: 1.5em;
+      border-bottom: 2px solid #1e1e1e;
+      display: inline-block;
+    }
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .project, .skill {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .project:hover, .skill:hover {
+      transform: translateY(-5px);
+    }
+    .project h3, .skill h3 {
+      margin-bottom: 0.5rem;
+      color: #ff5e57;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .contact a {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+    footer {
+      background: #121212;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      border-top: 1px solid #1e1e1e;
+      font-size: 0.9rem;
+      color: #666;
+    }
